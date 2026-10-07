@@ -105,8 +105,9 @@ fun DataPlanCard(
             // Top Start corner
             Text(
                 text = dataAmount,
+
                 style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
+                fontFamily = bold,
                 modifier = Modifier.align(Alignment.TopStart)
             )
 
@@ -126,6 +127,7 @@ fun DataPlanCard(
                 Text(
                     text = validityDays,
                     style = MaterialTheme.typography.bodySmall,
+                    fontFamily = bold,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
@@ -134,7 +136,7 @@ fun DataPlanCard(
             Text(
                 text = displayPrice,
                 style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
+                fontFamily = bold,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.align(Alignment.BottomEnd)
             )

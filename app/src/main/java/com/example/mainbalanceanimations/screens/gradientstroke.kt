@@ -15,7 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontWeight
+
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -75,7 +75,7 @@ fun GradientDataPlanCard(
             Text(
                 text = dataAmount,
                 style = AppTypography.headlineSmall,
-                fontWeight = FontWeight.Bold,
+                fontFamily = bold,
                 modifier = Modifier.align(Alignment.TopStart)
             )
 
@@ -96,6 +96,7 @@ fun GradientDataPlanCard(
 
                 Text(
                     text = validityDays,
+                    fontFamily = bold,
                     fontSize = 11.sp,
                     style = AppTypography.displaySmall
                 )
@@ -106,7 +107,7 @@ fun GradientDataPlanCard(
                 text = displayPrice,
                 fontSize = 14.sp,
                 style = AppTypography.displayMedium,
-                fontWeight = FontWeight.Bold,
+                fontFamily = bold,
                 color = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.align(Alignment.BottomEnd)
             )
